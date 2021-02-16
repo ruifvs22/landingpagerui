@@ -8,6 +8,7 @@ body{
     color:#131515;
     margin: 0;
     height: 100%;
+    padding-top:60px;
 }
 
 /* Nav Bar */
@@ -19,7 +20,7 @@ nav {
     color:white;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top:0;
 }
 
@@ -150,7 +151,7 @@ footer{
         font-size: 15px;
     }
     h3, li{
-        font-size: 12px;
+        font-size: 16px;
     }
     .sobre{
         width: 95%;
