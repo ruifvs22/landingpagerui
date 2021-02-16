@@ -153,7 +153,7 @@ footer{
     h3, li{
         font-size: 16px;
     }
-    .sobre{
-        width: 95%;
+    .sec, .sobre, .quote{
+        width: 98%;
     }
 }
