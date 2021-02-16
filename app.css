@@ -18,6 +18,7 @@ nav {
     background-color: black;
     color:white;
     justify-content: space-between;
+    align-items: center;
     position: sticky;
     top:0;
 }
@@ -26,14 +27,13 @@ nav {
     color: #0f82f5;
     font-size: 50px;
     margin: 0;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 .findMe {
     display: inline-flex;
-    width: 200px;
-    height: 55px;
     color: white;
+    padding-right: 20px;
 }
 a{
     padding: 0 4px
@@ -47,6 +47,7 @@ a{
 
 section {
     display: flex;
+    
 }
 
 .sec {
@@ -62,6 +63,8 @@ img {
     display: inline-flex;
     justify-content: right;
     width: 50%;
+    object-fit: contain;
+    flex-shrink: 2;
 
 }
 
@@ -85,6 +88,9 @@ li {
     padding: 0 0;
     text-align: left;
     line-height: 2em;
+}
+#portrait {
+    display: none;
 }
 
 /* Secção da Citação */
@@ -117,4 +123,36 @@ footer{
     padding: 0 30px;
     background-color: black;
     color:white;
+}
+
+@media (max-width: 500px), (orientation: portrait) {
+    section{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #portrait {
+        display: inline-flex;
+    }
+    #landscape{
+        display: none;
+    }
+
+    img{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h2, .subtitulo{
+        font-size: 15px;
+    }
+    h3, li{
+        font-size: 12px;
+    }
+    .sobre{
+        width: 95%;
+    }
 }
