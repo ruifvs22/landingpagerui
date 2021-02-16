@@ -1,0 +1,120 @@
+
+html{
+    height: 100%;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #f1a208;
+    color:#131515;
+    margin: 0;
+    height: 100%;
+}
+
+/* Nav Bar */
+
+nav {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    color:white;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+}
+
+#R {
+    color: #0f82f5;
+    font-size: 50px;
+    margin: 0;
+    padding-left: 15px;
+}
+
+.findMe {
+    display: inline-flex;
+    width: 200px;
+    height: 55px;
+    color: white;
+}
+a{
+    padding: 0 4px
+}
+
+.fa-instagram, .fa-linkedin-in{
+    color: white;
+}
+
+/* Main Sections */
+
+section {
+    display: flex;
+}
+
+.sec {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    display: inline-flex;
+    justify-content: right;
+    width: 50%;
+
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.subtitulo {
+    font-size: 1.5em;
+}
+
+.spinner {
+    font-size: 3em;
+}
+
+.sobre {
+    width: 70%;
+}
+li {
+    list-style-type: square;
+    padding: 0 0;
+    text-align: left;
+    line-height: 2em;
+}
+
+/* Secção da Citação */
+
+.citation {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    background-image: url("imgs/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.quote, .author {
+    width: 70%;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px rgb(46, 46, 46); 
+
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    background-color: black;
+    color:white;
+}
